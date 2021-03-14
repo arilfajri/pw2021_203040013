@@ -1,3 +1,6 @@
+<!-- Nama : Aril Fajri Tolani
+NRP : 203040013
+Shift : Rabu 09:00 - 10:00 -->
 <?php
 function hitungDeterminan($a, $b, $c, $d){
     //baris code perhitungan determinan
