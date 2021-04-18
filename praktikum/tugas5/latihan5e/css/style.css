@@ -1,0 +1,81 @@
+body {
+  background-color: #0c111b;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+  background-color: #121926;
+}
+
+.nav-link {
+  font-weight: 400;
+}
+
+.navbar-brand h3 {
+  font-family: 'Zen Dots';
+  color: #ffffff;
+  text-shadow: 0px 0px 10px rgb(0, 162, 255);
+
+}
+
+nav {
+  box-shadow: 0px 4px 6px -1px rgba(255, 255, 255, 0.3);
+  z-index: 9999;
+}
+
+.admin {
+  margin-left: 5px;
+}
+
+.carousel-item {
+  height: 100vh;
+  min-height: 300px;
+  background-repeat: no-repeat center center scroll;
+  background-size: cover;
+}
+
+
+.carousel-item {
+  height: 100vh;
+  min-height: 300px;
+  background-repeat: no-repeat center center scroll;
+  background-size: cover;
+}
+
+.carousel-item img {
+
+  filter: brightness(50%);
+}
+
+.carousel-caption {
+  margin-bottom: 150px;
+}
+
+
+
+.carousel {
+  box-shadow: 0px 4px 6px -1px rgba(255, 255, 255, 0.3);
+}
+
+.card img {
+  height: 260px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card {
+  width: 220px;
+  height: 360px;
+  box-shadow: 0px 1px 8px 1px rgba(255, 255, 255, 0.548);
+}
+
+.card a {
+  box-shadow: 0px 1px 8px 1px rgba(255, 255, 255, 0.548);
+}
+
+
+.card-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
