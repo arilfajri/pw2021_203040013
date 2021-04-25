@@ -1,0 +1,37 @@
+.navbar {
+  background-color: #131a28;
+}
+
+nav {
+  box-shadow: 0px 4px 6px -1px rgba(255, 255, 255, 0.3);
+  z-index: 9999;
+}
+
+.nav-link {
+  font-weight: 400;
+}
+
+.navbar-brand h3 {
+  font-family: 'Zen Dots';
+  color: #ffffff;
+  text-shadow: 0px 0px 10px rgb(0, 162, 255);
+
+}
+
+body {
+  background-color: #0c111b;
+  font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+  font-weight: 600;
+}
+
+.breadcrumb {
+  margin-top: 120px;
+}
+
+.figure {
+  box-shadow: 0px 1px 8px 1px rgba(255, 255, 255, 0.548);
+
+}
