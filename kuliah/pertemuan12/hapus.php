@@ -1,11 +1,10 @@
-
 <?php
 /*
 Aril Fajri Tolani
 203040013
 https://github.com/arilfajri/pw2021_203040013
-pertemuan 11 - 29 April 2021
-mempelajari mengenai Delete,Update dan Searching Data PHP 
+pertemuan 12 - 6 Mei 2021
+mempelajari mengenai login dan registrasi PHP 
 */
 ?>
 <?php
