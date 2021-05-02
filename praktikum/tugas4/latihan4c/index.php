@@ -8,6 +8,20 @@ require 'php/functions.php';
 // melakukan query
 $film = query("SELECT * FROM film");
 
+// ketika tombol cari di klik
+if (isset($_GET['cari'])) {
+  $keyword = $_GET['keyword'];
+  $film = query("SELECT * FROM film
+  WHERE
+    nama_film LIKE '%$keyword%' OR
+    sutradara LIKE '%$keyword%' OR
+    produser LIKE '%$keyword%'
+");
+} else {
+  $film = query("SELECT * FROM film");
+}
+?>
+
 ?>
 
 <!doctype html>
@@ -44,9 +58,9 @@ $film = query("SELECT * FROM film");
             <a class="nav-link" href="#">Link</a>
           </li>
         </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" size="80">
-          <button class="btn btn-outline-primary" type="submit">Search</button>
+        <form class="d-flex" method="GET">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" size="80" name="keyword">
+          <button class="btn btn-outline-primary" type="submit" name="cari">Search</button>
         </form>
       </div>
     </div>
@@ -61,19 +75,27 @@ $film = query("SELECT * FROM film");
         <hr class="text-white">
       </div>
     </div>
-    <div class="row pt-3">
-      <?php foreach ($film as $row) : ?>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-          <div class="card mx-auto">
-            <img src="asset/img/<?= $row["poster"]; ?>" alt="">
-            <div class="card-body">
-              <h6 class="card-title text-center"><?= $row["nama_film"] ?></h6>
+    <?php if (empty($film)) : ?>
+      <tr>
+        <td colspan="7">
+          <h1 class="text-white text-center">data tidak ditemukan</h1>
+        </td>
+      </tr>
+    <?php else : ?>
+      <div class="row pt-3">
+        <?php foreach ($film as $row) : ?>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="card mx-auto">
+              <img src="asset/img/<?= $row["poster"]; ?>" alt="">
+              <div class="card-body">
+                <h6 class="card-title text-center"><?= $row["nama_film"] ?></h6>
+              </div>
+              <a href="php/detail.php?id=<?= $row["id"]; ?>" class="btn btn-block text-white btn-primary">Lihat Detail</a>
             </div>
-            <a href="php/detail.php?id=<?= $row["id"]; ?>" class="btn btn-block text-white btn-primary">Lihat Detail</a>
           </div>
-        </div>
-      <?php endforeach; ?>
-    </div>
+        <?php endforeach; ?>
+      </div>
+    <?php endif; ?>
   </div>
   <!-- card -->
   <!-- Optional JavaScript; choose one of the two! -->

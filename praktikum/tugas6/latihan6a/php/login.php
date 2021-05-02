@@ -17,11 +17,11 @@ if (isset($_POST['submit'])) {
   // mencocokan username dan password
   if (mysqli_num_rows($cek_user) > 0) {
     $row = mysqli_fetch_assoc($cek_user);
-    if ($password == $row['password']) {
+    if (password_verify($password, $row['password'])) {
       $_SESSION['username'] = $_POST['username'];
-      $_SESSION['hash'] = $row['id'];
+      $_SESSION['hash'] = hash('sha256', $row['id'], false);
     }
-    if ($row['id'] == $_SESSION['hash']) {
+    if (hash('sha256', $row['id']) == $_SESSION['hash']) {
       header("Location: admin.php");
       die;
     }
@@ -94,7 +94,6 @@ if (isset($_POST['submit'])) {
             <button type="submit" class="btn btn-primary w-100" name="submit">Login</button>
           </form>
         </div>
-        <p class="text-center text-white" style="font-size: 14px;">Belum memiliki akun? <a href="registrasi.php" style="text-decoration: none;">Register Sekarang!</a></p>
         <div class="card-footer text-center text-white">
           <small>&copy; 2021 RealFlix</small>
         </div>
