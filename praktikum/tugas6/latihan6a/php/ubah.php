@@ -1,8 +1,4 @@
-<!-- Nama : Aril Fajri Tolani
-NRP : 203040013
-Shift : Rabu 09:00 - 10:00 -->
 <?php
-
 require 'functions.php';
 
 // ambil data di url
@@ -29,9 +25,7 @@ if (isset($_POST["ubah"])) {
 ";
   }
 }
-
 ?>
-
 <!doctype html>
 <html lang="en">
 

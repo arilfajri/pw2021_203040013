@@ -1,6 +1,3 @@
-<!-- Nama : Aril Fajri Tolani
-NRP : 203040013
-Shift : Rabu 09:00 - 10:00 -->
 <?php
 session_start();
 
@@ -34,9 +31,7 @@ if (isset($_POST["ubah"])) {
 ";
   }
 }
-
 ?>
-
 <!doctype html>
 <html lang="en">
 

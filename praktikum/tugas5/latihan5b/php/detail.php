@@ -1,6 +1,3 @@
-<!-- Nama : Aril Fajri Tolani
-NRP : 203040013
-Shift : Rabu 09:00 - 10:00 -->
 <?php
 // mengecek apakah ada id yang dikirimkan
 // jika tidak maka akan dikembalikan ke halaman index.php
@@ -15,7 +12,6 @@ $id = $_GET['id'];
 
 // melakukan query dengan parameter id yang diambil dari url
 $film = query("SELECT * FROM film WHERE id = $id")[0];
-
 ?>
 <!doctype html>
 <html lang="en">

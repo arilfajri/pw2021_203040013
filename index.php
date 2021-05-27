@@ -299,11 +299,11 @@
               Pertemuan 3
             </button>
             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
-              <li><a class="dropdown-item" href="praktikum/tugas3/latihan3a.php" target="blank">Latihan 3a</a></li>
-              <li><a class="dropdown-item" href="praktikum/tugas3/latihan3b.php" target="blank">Latihan 3b</a></li>
-              <li><a class="dropdown-item" href="praktikum/tugas3/latihan3c.php" target="blank">Latihan 3c</a></li>
-              <li><a class="dropdown-item" href="praktikum/tugas3/latihan3d.php" target="blank">Latihan 3d</a></li>
-              <li><a class="dropdown-item" href="praktikum/tugas3/latihan3e.php" target="blank">Latihan 3e</a></li>
+              <li><a class="dropdown-item" href="praktikum/tugas3/Latihan3a.php" target="blank">Latihan 3a</a></li>
+              <li><a class="dropdown-item" href="praktikum/tugas3/Latihan3b.php" target="blank">Latihan 3b</a></li>
+              <li><a class="dropdown-item" href="praktikum/tugas3/Latihan3c.php" target="blank">Latihan 3c</a></li>
+              <li><a class="dropdown-item" href="praktikum/tugas3/Latihan3d.php" target="blank">Latihan 3d</a></li>
+              <li><a class="dropdown-item" href="praktikum/tugas3/Latihan3e.php" target="blank">Latihan 3e</a></li>
             </ul>
           </div>
         </div>

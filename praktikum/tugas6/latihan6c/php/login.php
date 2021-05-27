@@ -1,6 +1,3 @@
-<!-- Nama : Aril Fajri Tolani
-NRP : 203040013
-Shift : Rabu 09:00 - 10:00 -->
 <?php
 session_start();
 require 'functions.php';
@@ -9,7 +6,6 @@ if (isset($_SESSION['username'])) {
   header("Location: admin.php");
   exit;
 }
-
 
 // cek cookie
 if (isset($_COOKIE['username']) && isset($_COOKIE['hash'])) {
@@ -27,7 +23,6 @@ if (isset($_COOKIE['username']) && isset($_COOKIE['hash'])) {
     exit;
   }
 }
-
 
 // login
 if (isset($_POST['submit'])) {
@@ -58,9 +53,7 @@ if (isset($_POST['submit'])) {
   }
   $error = true;
 }
-
 ?>
-
 <!doctype html>
 <html lang="en">
 

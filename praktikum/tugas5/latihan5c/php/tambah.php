@@ -1,9 +1,4 @@
-<!-- Nama : Aril Fajri Tolani
-NRP : 203040013
-Shift : Rabu 09:00 - 10:00 -->
-
 <?php
-
 require 'functions.php';
 
 // cek apakah tombol sudah ditekan atau belum
@@ -25,9 +20,7 @@ if (isset($_POST["tambah"])) {
 ";
   }
 }
-
 ?>
-
 <!doctype html>
 <html lang="en">
 

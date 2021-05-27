@@ -5,7 +5,6 @@ require 'functions.php';
 // melakukan query
 $film = query("SELECT * FROM film");
 ?>
-
 <!doctype html>
 <html lang="en">
 
